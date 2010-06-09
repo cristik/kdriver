@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Custom Environment Variables"
+	>
+	<UserMacro
+		Name="DDKBUILD_PATH"
+		Value="D:\WINDDK\ddkbuild.cmd"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="WXPBASE"
+		Value="D:\WINDDK\2600.1106"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="WNETBASE"
+		Value="D:\WINDDK\3790.1830"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="WLHBASE"
+		Value="D:\WINDDK\6001.18002"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="W7BASE"
+		Value="D:\WINDDK\7600.16385.0"
+		PerformEnvironmentSet="true"
+	/>
+</VisualStudioPropertySheet>
