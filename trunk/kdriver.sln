@@ -1,10 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdriver.WXP", "kdriver\kdriver.WXP.vcproj", "{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Svc", "helpers\CService_demo\Svc\Svc.vcproj", "{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6} = {B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
 		WXP checked (PREfast)|Win32 = WXP checked (PREfast)|Win32
 		WXP checked|Win32 = WXP checked|Win32
 		WXP free|Win32 = WXP free|Win32
@@ -13,6 +20,10 @@ Global
 		WXP2K free|Win32 = WXP2K free|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.Debug|Win32.ActiveCfg = WXP2K checked (PREfast)|Win32
+		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.Debug|Win32.Build.0 = WXP2K checked (PREfast)|Win32
+		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.Release|Win32.ActiveCfg = WXP2K checked (PREfast)|Win32
+		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.Release|Win32.Build.0 = WXP2K checked (PREfast)|Win32
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP checked (PREfast)|Win32.ActiveCfg = WXP checked (PREfast)|Win32
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP checked (PREfast)|Win32.Build.0 = WXP checked (PREfast)|Win32
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP checked (PREfast)|Win32.Deploy.0 = WXP checked (PREfast)|Win32
@@ -31,6 +42,22 @@ Global
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP2K free|Win32.ActiveCfg = WXP2K free|Win32
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP2K free|Win32.Build.0 = WXP2K free|Win32
 		{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}.WXP2K free|Win32.Deploy.0 = WXP2K free|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.Debug|Win32.Build.0 = Debug|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.Release|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.Release|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP checked (PREfast)|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP checked (PREfast)|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP checked|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP checked|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP free|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP free|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K checked (PREfast)|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K checked (PREfast)|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K checked|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K checked|Win32.Build.0 = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K free|Win32.ActiveCfg = Release|Win32
+		{B2AF51D0-EA67-4814-8DB3-AA3EE331810C}.WXP2K free|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

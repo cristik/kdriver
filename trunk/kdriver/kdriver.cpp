@@ -26,6 +26,7 @@ extern "C" {
 #endif
 
 #include "kdriver.h"
+#include "ops.h"
 
 #ifdef __cplusplus
 namespace { // anonymous namespace to limit the scope of this global variable!
@@ -35,11 +36,24 @@ PDRIVER_OBJECT pdoGlobalDrvObj = 0;
 }; // anonymous namespace
 #endif
 
-NTSTATUS KDRIVER_DispatchCreateClose(
+NTSTATUS KDRIVER_DispatchCreate(
     IN PDEVICE_OBJECT		DeviceObject,
     IN PIRP					Irp
     )
 {
+    NTSTATUS status = STATUS_SUCCESS;
+    Irp->IoStatus.Status = status;
+    Irp->IoStatus.Information = 0;
+    IoCompleteRequest(Irp, IO_NO_INCREMENT);
+    return status;
+}
+
+NTSTATUS KDRIVER_DispatchClose(
+    IN PDEVICE_OBJECT		DeviceObject,
+    IN PIRP					Irp
+    )
+{
+	stopFiltering();
     NTSTATUS status = STATUS_SUCCESS;
     Irp->IoStatus.Status = status;
     Irp->IoStatus.Information = 0;
@@ -127,8 +141,8 @@ NTSTATUS DriverEntry(
     // NOTE: You need not provide your own implementation for any major function that
     //       you do not want to handle. I have seen code using DDKWizard that left the
     //       *empty* dispatch routines intact. This is not necessary at all!
-    DriverObject->MajorFunction[IRP_MJ_CREATE] =
-    DriverObject->MajorFunction[IRP_MJ_CLOSE] = KDRIVER_DispatchCreateClose;
+    DriverObject->MajorFunction[IRP_MJ_CREATE] = KDRIVER_DispatchCreate;
+    DriverObject->MajorFunction[IRP_MJ_CLOSE] = KDRIVER_DispatchClose;
     DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = KDRIVER_DispatchDeviceControl;
     DriverObject->DriverUnload = KDRIVER_DriverUnload;
 

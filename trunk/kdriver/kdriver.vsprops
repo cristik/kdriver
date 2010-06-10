@@ -6,27 +6,27 @@
 	>
 	<UserMacro
 		Name="DDKBUILD_PATH"
-		Value="D:\WINDDK\ddkbuild.cmd"
+		Value="D:\WinDDK\ddkbuild.cmd"
 		PerformEnvironmentSet="true"
 	/>
 	<UserMacro
 		Name="WXPBASE"
-		Value="D:\WINDDK\2600.1106"
+		Value="D:\WinDDK\7600.16385.1"
 		PerformEnvironmentSet="true"
 	/>
 	<UserMacro
 		Name="WNETBASE"
-		Value="D:\WINDDK\3790.1830"
+		Value="D:\WinDDK\7600.16385.1"
 		PerformEnvironmentSet="true"
 	/>
 	<UserMacro
 		Name="WLHBASE"
-		Value="D:\WINDDK\6001.18002"
+		Value="D:\WinDDK\7600.16385.1"
 		PerformEnvironmentSet="true"
 	/>
 	<UserMacro
 		Name="W7BASE"
-		Value="D:\WINDDK\7600.16385.0"
+		Value="D:\WinDDK\7600.16385.1"
 		PerformEnvironmentSet="true"
 	/>
 </VisualStudioPropertySheet>

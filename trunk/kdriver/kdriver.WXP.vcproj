@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="windows-1250"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8,00"
+	Version="9,00"
 	Name="kdriver.WXP"
 	ProjectGUID="{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -55,6 +56,7 @@
 		</Configuration>
 		<Configuration
 			Name="WXP checked (PREfast)|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory=".\"
 			ConfigurationType="0"
 			InheritedPropertySheets=".\kdriver.vsprops"
@@ -145,6 +147,10 @@
 				RelativePath=".\kdriver.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\ops.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -164,6 +170,10 @@
 			</File>
 			<File
 				RelativePath=".\kdriver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ops.h"
 				>
 			</File>
 		</Filter>
