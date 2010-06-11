@@ -6,8 +6,10 @@
 
 bool KDriverService::startFiltering(void)
 {
+	return false;
 }
 
 bool KDriverService::stopFiltering(void)
 {
+	return false;
 }

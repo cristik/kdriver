@@ -4,6 +4,7 @@
 	Version="9,00"
 	Name="kdriver.WXP"
 	ProjectGUID="{B0FA7FA9-57AA-48B5-8FAA-A14D100C0CF6}"
+	RootNamespace="kdriver.WXP"
 	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
@@ -117,6 +118,7 @@
 		</Configuration>
 		<Configuration
 			Name="WXP2K checked (PREfast)|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory=".\"
 			ConfigurationType="0"
 			InheritedPropertySheets=".\kdriver.vsprops"
