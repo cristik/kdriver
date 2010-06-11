@@ -12,4 +12,5 @@ TARGETTYPE=DRIVER
 C_DEFINES=$(C_DEFINES)
 
 SOURCES=kdriver.cpp \
-        drvversion.rc
+        drvversion.rc \
+        ops.cpp
